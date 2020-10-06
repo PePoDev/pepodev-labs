@@ -1,0 +1,2 @@
+[submodule "ansible/kubespray"]
+	url = https://github.com/kubernetes-sigs/kubespray
