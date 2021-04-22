@@ -1,3 +1,0 @@
-[submodule "ansible/kubespray"]
-url = https://github.com/kubernetes-sigs/kubespray
-branch = version-2.8

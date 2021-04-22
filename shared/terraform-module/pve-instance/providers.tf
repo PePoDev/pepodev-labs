@@ -22,7 +22,7 @@ data "vsphere_datacenter" "dc" {
 
 data "vsphere_compute_cluster" "cluster" {
   name          = local.vsphere_cluster_name
-  datacenter_id = "${data.vsphere_datacenter.dc.id}"
+  datacenter_id = data.vsphere_datacenter.dc.id
 }
 
 data "vsphere_datastore" "esx_vsan_storage" {
@@ -31,7 +31,7 @@ data "vsphere_datastore" "esx_vsan_storage" {
 }
 
 data "vsphere_datastore" "esx_ssd_storage" {
-  count = length(local.vsphere_datastore_ssd_names)
+  count         = length(local.vsphere_datastore_ssd_names)
   name          = local.vsphere_datastore_ssd_names[count.index]
   datacenter_id = data.vsphere_datacenter.dc.id
 }
