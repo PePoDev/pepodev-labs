@@ -18,9 +18,10 @@ To run all labs in this project, You must install prerequisite tools.
 - [kind](#kind)
 - [kubectl](#kubectl)
 - [helm](#helm)
+- [packer](#packer)
 - [wrk2](#wrk2)
 
 ## Table of Labs
 
-- [Horizontal Pod Autoscaler](#asd)
-- [Infrastructure as Code](#IaC)
+- [Horizontal Pod Autoscaler](labs/horizontal-pod-autoscaler/README.md)
+- [Infrastructure as Code](#labs/infrastructure-as-code/README.md)

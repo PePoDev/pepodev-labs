@@ -1,12 +1,8 @@
 terraform {
   required_providers {
-    kubernetes = {
-      source  = "hashicorp/kubernetes"
+    helm = {
+      source  = "hashicorp/helm"
       version = "~> 2.1"
-    }
-    kind = {
-      source  = "kyma-incubator/kind"
-      version = "~> 0.0.7"
     }
   }
 }

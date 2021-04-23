@@ -14,11 +14,10 @@ terraform init
 terraform apply
 ```
 
-### Stress test
+### Create workload
 
 ```sh
-# Don't forget to change thread number suit to your system
-wrk2 -t32 -c400 -d30s http://localhost:8080
+kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://hpa-example; done"
 ```
 
 ## Cleanup
@@ -26,3 +25,8 @@ wrk2 -t32 -c400 -d30s http://localhost:8080
 ```sh
 terraform destroy
 ```
+
+## Reference
+
+- [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
+- [Walkthrough](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
