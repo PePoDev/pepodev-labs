@@ -10,11 +10,18 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
+*.tfvars
 terraform.tfvas
+!template.tfvars
+.terraform.lock.hcl
 
 # Ansible
 
 # Kubernetes
 *-config
 
-.temp
+# Vagrant
+.vagrant
+
+# Others
+.tmp

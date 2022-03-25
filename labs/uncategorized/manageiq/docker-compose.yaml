@@ -1,0 +1,6 @@
+version: "3"
+services:
+  manageiq:
+    image: manageiq/manageiq:kasparov-1
+    ports:
+      - 8443:443

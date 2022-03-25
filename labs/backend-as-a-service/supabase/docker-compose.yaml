@@ -1,0 +1,8 @@
+version: "3"
+services:
+  supabase:
+    image: supabase/supabase
+    ports:
+      - 80:80
+    volumes:
+      - ./supabase:/supa

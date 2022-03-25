@@ -5,12 +5,14 @@ Most laboratories use Terraform to automate their prepared environments. Also, c
 
 ## Prerequisites
 
-To run all labs in this project, You must install prerequisite tools.
+To run all of the labs in this repo, You must install prerequisite tools in the list below.
 
 - [git](#git)
 - [terraform](#terraform)
 - [ansible](#ansible)
 - [docker](#docker)
+- [docker-compose](#docker-compose)
+- [vagrant](#vagrant)
 - [kind](#kind)
 - [kubectl](#kubectl)
 - [helm](#helm)
@@ -19,6 +21,12 @@ To run all labs in this project, You must install prerequisite tools.
 
 ## Table of Labs
 
-- [K8s Horizontal Pod Autoscaler](labs/horizontal-pod-autoscaler/README.md)
-- [K8s LoadBalancer](labs/load-balance/README.md)
+### Kubernetes
+
+- [Horizontal Pod Autoscaler](labs/horizontal-pod-autoscaler/README.md)
+- [LoadBalancer](labs/load-balance/README.md)
+- [Cert Manager](labs/load-balance/README.md)
+
+### Terraform
+
 - [Terraform Infrastructure as Code](#labs/infrastructure-as-code/README.md)
