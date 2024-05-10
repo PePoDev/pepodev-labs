@@ -35,7 +35,7 @@ module "eks_blueprints_addons" {
   enable_kube_prometheus_stack = true
   enable_metrics_server        = true
   enable_ingress_nginx         = true
-  enable_karpenter             = false
+  enable_karpenter             = true
 
   enable_external_dns            = true
   external_dns_route53_zone_arns = [data.aws_route53_zone.aws_pepo_dev.arn]
